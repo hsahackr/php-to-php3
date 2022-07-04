@@ -16,13 +16,30 @@ Convert PHP code back to working PHP 3 code!
 5. It now scans for language constructs and rewrites the affected code blocks
 6. Depending on the configuration, a temporary or permanent file is being generated, executed and removed
 
+## Download PHP 3
+
+### For Linux / macOS / etc.
+Download Link: http://museum.php.net/php3/php-3.0.18.tar.gz (PHP 3.0.18)
+```
+cd Downloads && tar -zxvf php-3.0.18.tar.gz && cd php-3.0.18
+./buildconf && ./configure && make -j $(nproc)
+./php -v
+```
+Succesful compilation tested on Ubuntu and Debian (Kali) in 2022. No root access required.
+
+### For Windows
+Download link: http://museum.php.net/win32/php-3.0.17-win32.zip (PHP 3.0.17)
+
 ## Features
+
+As the script is written in PHP 3, you only need PHP 3 for it to work.
 
 ### Language Constructs
 - foreach (PHP 4+)
 - require_once (PHP 4+)
 - include_once (PHP 4+)
 - closures (PHP 5.3+)
+- short array definition (PHP 5.4+)
 
 ### Functions
 Most are PHP 4+, some are PHP 7+ and PHP 8+
