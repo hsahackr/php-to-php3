@@ -13,6 +13,9 @@ Convert PHP code back to working PHP 3 code!
 - require_once (PHP 4+)
 - include_once (PHP 4+)
 
+## Functions
+
+
 
 ## Supported by default in PHP 3
 
