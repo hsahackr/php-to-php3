@@ -7,7 +7,7 @@ Convert PHP code back to working PHP 3 code!
 - You may need to install libraries as old PHP modules do not work anymore together with new libraries
 
 ## How it technically works
-1. The program screens the script for functions and checks if they work in PHP 3, depending on the function using a given array or by trying out
+1. The program screens the script for functions, checks if they work in PHP 3, depending on the function using a given list or by trying
 2. Errors are being printed if some function can't be replaces
 3. For some function, it is enough to add define them at top of the script
 2. Warinings are being printed if some function can't be replaces well, f.e. if the polyfill does not support all requested features
