@@ -6,15 +6,62 @@ Convert PHP code back to working PHP 3 code!
 - Not all functions or constructs support all parameters as in their original implentation
 - You may need to install libraries as old PHP modules do not work anymore together with new libraries
 
+## How it technically works
+1. The program screens the script for functions and checks if they work in PHP 3, depending on the function using a given array or by trying out
+2. Errors are being printed if some function can't be replaces
+3. For some function, it is enough to add define them at top of the script
+2. Warinings are being printed if some function can't be replaces well, f.e. if the polyfill does not support all requested features
+4. Other functions are being analyzed and rewritten as a new block of code
+5. It now scans for language constructs and rewrites the affected code blocks
+6. Depending on the configuration, a temporary or permanent file is being generated, executed and removed
+
 ## Features
 
 ### Language Constructs
 - foreach (PHP 4+)
 - require_once (PHP 4+)
 - include_once (PHP 4+)
+- closures (PHP 5.3+)
 
-## Functions
-
+### Functions
+Most are PHP 4+, some are PHP 7+ and PHP 8+
+- array_braces
+- array_diff
+- array_key_exists
+- array_keys
+- array_map
+- array_merge
+- array_pop
+- array_push
+- array_reverse
+- array_search
+- array_shift
+- array_slice
+- array_unique
+- array_unshift
+- array_values
+- date_default_timezone_set
+- declare
+- file_get_contents
+- file_put_contents
+- func_get_args
+- get_defined_vars
+- in_array
+- ini_set
+- is_bool
+- is_callable
+- is_null
+- is_numeric
+- ob_end_clean
+- ob_get_contents
+- ob_start
+- php_sapi_name
+- require_once
+- shell_exec
+- str_contains
+- str_ends_with
+- str_repeat
+- str_starts_with
 
 
 ## Supported by default in PHP 3
