@@ -28,7 +28,7 @@ cd Downloads && tar -zxvf php-3.0.18.tar.gz && cd php-3.0.18
 Succesful compilation tested on Ubuntu and Debian (Kali) in 2022. No root access required.
 
 ### For Windows
-Download link: http://museum.php.net/win32/php-3.0.17-win32.zip (PHP 3.0.17)
+Download Link: http://museum.php.net/win32/php-3.0.17-win32.zip (PHP 3.0.17)
 
 ## Features
 
