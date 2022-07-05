@@ -7,14 +7,18 @@ Convert PHP code back to working PHP 3 code!
 - Class features are not a main part of this project, so you usually won't be able to use PHP 4+ object-oriented programming
 - You may need to install libraries as old PHP modules do not work anymore together with new libraries
 
-## How it technically works
-1. The program screens the script for functions, checks if they work in PHP 3, depending on the function using a given list or by trying
-2. Errors are being printed if some function can't be replaces
-3. For some function, it is enough to add define them at top of the script
-2. Warinings are being printed if some function can't be replaces well, f.e. if the polyfill does not support all requested features
-4. Other functions are being analyzed and rewritten as a new block of code
-5. It now scans for language constructs and rewrites the affected code blocks
-6. Depending on the configuration, a temporary or permanent file is being generated, executed and removed
+## Known Bugs
+- In a multidimensional array, using [] to define a subarray does not work from third level on. Use array() instead
+
+## Usage
+Clone the reposiry, launch a new terminal and type
+```
+php converter.php [file] [options]
+```
+Options:
+- 'x' to execute the generated script
+- 'r' to remove the generated script after execution
+- 't' to generate a temporary (hidden) file
 
 ## Download PHP 3
 
