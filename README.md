@@ -11,6 +11,7 @@ Convert PHP code back to working PHP 3 code!
 ## Known Bugs
 - In a multidimensional array, using [] to define a subarray does not work from third level on. Use array() instead
 - Using [], foreach or any other feature-like syntax in string content may break the whole script
+- require_once and include_once may not work inside a if, else, while, foreach or for
 
 ## Usage
 Clone the reposiry, launch a new terminal and type
