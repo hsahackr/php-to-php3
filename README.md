@@ -6,6 +6,7 @@ Convert PHP code back to working PHP 3 code!
 - Not all functions or constructs support all parameters as in their original implentation
 - Class features are not a main part of this project, so you usually won't be able to use PHP 4+ object-oriented programming
 - You may need to install libraries as old PHP modules do not work anymore together with new libraries
+- The execution of generated file creates temporary files. Please do not modify them during execution
 
 ## Known Bugs
 - In a multidimensional array, using [] to define a subarray does not work from third level on. Use array() instead
