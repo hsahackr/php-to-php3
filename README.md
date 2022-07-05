@@ -39,10 +39,11 @@ Download Link: http://museum.php.net/win32/php-3.0.17-win32.zip (PHP 3.0.17)
 As the script is written in PHP 3, you only need PHP 3 for it to work.
 
 ### Language Constructs
-- foreach (PHP 4+)
-- require_once (PHP 4+)
-- include_once (PHP 4+)
 - closures (PHP 5.3+)
+- declare/define (PHP 4+)
+- foreach (PHP 4+)
+- include_once (PHP 4+)
+- require_once (PHP 4+)
 - short array definition (PHP 5.4+)
 
 ### Functions
@@ -63,7 +64,6 @@ Most are PHP 4+, some are PHP 7+ and PHP 8+
 - array_unshift
 - array_values
 - date_default_timezone_set
-- declare
 - file_get_contents
 - file_put_contents
 - func_get_args
